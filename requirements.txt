@@ -1,0 +1,5 @@
+Flask==2.3.3
+python-dotenv
+sqlalchemy
+pg8000
+google-cloud-alloydb-connector[pg8000]
