@@ -50,7 +50,7 @@ The database has the following tables:
 
 Return only the SQL query, no explanations or markdown.
 """
-            gen_query = text("SELECT ai.generate_text(:prompt, model_id => 'gemini-3-flash-preview') as generated_sql")
+            gen_query = text("SELECT ai.generate_text(:prompt, model_id => 'gemini-1.5-flash') as generated_sql")
             result = conn.execute(gen_query, {"prompt": prompt})
             generated_sql = result.fetchone()[0].strip()
 
